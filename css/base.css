@@ -1,4 +1,3 @@
-/* ===== RESET ===== */
 *,
 *::before,
 *::after {
@@ -9,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%; /* Важно для прижатия футера */
 }
 
 body {
@@ -18,6 +18,16 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   -webkit-font-smoothing: antialiased;
+  
+  /* Прижимаем футер к низу */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Основной контент растягивается на все свободное место */
+.main {
+  flex: 1 0 auto;
 }
 
 img {
@@ -42,9 +52,8 @@ button {
   background: none;
 }
 
-/* ===== ПЕРЕМЕННЫЕ ===== */
 :root {
-  --color-accent: #b6f500; /* Лаймовый акцент */
+  --color-accent: #b6f500; 
   --color-accent-dark: #9ad100;
   --color-dark: #1a1a1a;
   --color-text: #1f1f1f;
@@ -59,7 +68,6 @@ button {
   --gap: 24px;
 }
 
-/* ===== CONTAINER ===== */
 .container {
   width: 100%;
   max-width: var(--container);
@@ -67,7 +75,6 @@ button {
   padding: 0 20px;
 }
 
-/* ===== SECTION ===== */
 .section {
   padding: 80px 0;
 }
@@ -97,7 +104,6 @@ button {
   color: var(--color-muted);
 }
 
-/* ===== BUTTONS ===== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -156,7 +162,6 @@ button {
   width: 100%;
 }
 
-/* ===== LOGO ===== */
 .logo {
   display: inline-flex;
   align-items: center;
@@ -176,7 +181,6 @@ button {
   font-size: 18px;
 }
 
-/* ===== RESPONSIVE BASE ===== */
 @media (max-width: 768px) {
   .section {
     padding: 56px 0;
