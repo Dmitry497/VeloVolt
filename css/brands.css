@@ -1,0 +1,7 @@
+.brands { padding: 20px 0 40px; overflow: hidden; }
+.brands__slider { position: relative; width: 100%; overflow: hidden; padding: 20px 0; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); }
+.brands__track { display: flex; align-items: center; gap: 80px; width: max-content; animation: scrollBrands 25s linear infinite; }
+.brands__track:hover { animation-play-state: paused; }
+.brands__item img { height: 40px; width: auto; object-fit: contain; transition: transform 0.3s ease; }
+.brands__item:hover img { transform: scale(1.1); }
+@keyframes scrollBrands { 0% { transform: translateX(0); } 100% { transform: translateX(-25%); } }

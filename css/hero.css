@@ -1,0 +1,10 @@
+.hero { padding: 64px 0 80px; background: linear-gradient(180deg, var(--color-bg-soft) 0%, var(--color-bg) 100%); }
+.hero__inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+.hero__title { font-size: clamp(32px, 5vw, 56px); font-weight: 800; line-height: 1.1; letter-spacing: -0.03em; }
+.hero__subtitle { margin-top: 20px; font-size: 18px; color: var(--color-muted); max-width: 480px; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.hero__stats { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 40px; }
+.hero__stat { font-size: 14px; color: var(--color-muted); }
+.hero__stat-num { display: block; font-size: 24px; color: var(--color-text); font-weight: 800; }
+.hero__media { display: flex; justify-content: center; }
+.hero__img { width: 100%; max-width: 560px; border-radius: var(--radius-lg); object-fit: contain; background: var(--color-bg-soft); }

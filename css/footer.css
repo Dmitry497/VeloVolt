@@ -1,0 +1,13 @@
+.footer { background: #121613; color: #ffffff; padding: 64px 0 32px; }
+.footer__top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 60px; }
+.footer__col--brand { display: flex; flex-direction: column; gap: 24px; }
+.footer__logo { color: #ffffff; }
+.footer__socials { display: flex; gap: 12px; }
+.footer__social { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(255, 255, 255, 0.08); color: #ffffff; transition: background 0.2s, color 0.2s; }
+.footer__social:hover { background: var(--color-accent); color: var(--color-dark); }
+.footer__heading { font-size: 16px; font-weight: 700; margin-bottom: 20px; color: #ffffff; }
+.footer__list { display: flex; flex-direction: column; gap: 12px; }
+.footer__link { font-size: 14px; color: rgba(255, 255, 255, 0.6); transition: color 0.2s; }
+.footer__link:hover { color: var(--color-accent); }
+.footer__link--phone { font-size: 18px; font-weight: 700; color: #ffffff; }
+.footer__text { font-size: 14px; color: rgba(255, 255, 255, 0.6); }
